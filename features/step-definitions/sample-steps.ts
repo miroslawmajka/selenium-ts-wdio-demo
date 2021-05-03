@@ -7,6 +7,11 @@ const pages = {
   login: LoginPage,
 };
 
+Given(/^I open The Internet homepage$/, async () => {
+  // Not using page object but the baseUrl instead
+  await browser.url('/');
+});
+
 Given(/^I am on the (\w+) page$/, async (page) => {
   await pages[page].open();
 });
