@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint --ext .ts .",
-    "test": "wdio wdio.conf.ts",
+    "test": "wdio wdio.local.conf.ts",
     "test:grid": "wdio wdio.grid.conf.ts"
   },
   "keywords": [],
